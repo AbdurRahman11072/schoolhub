@@ -1,0 +1,10 @@
+@use "/scss/variable/variable";
+.btn {
+  padding: 15px;
+  background-color: variable.$button-color;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+}

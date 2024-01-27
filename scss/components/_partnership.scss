@@ -1,0 +1,38 @@
+.partnership {
+  width: 70%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  .partnership_img {
+    position: relative;
+    .pimage {
+      width: 450px;
+      height: 450px;
+    }
+    .Pimage_container {
+      position: absolute;
+      top: 150px;
+      left: 150px;
+      .pimage2 {
+        width: 150px;
+        height: 150px;
+        position: relative;
+      }
+      .pimage3 {
+        position: absolute;
+        left: 3px;
+        top: 25px;
+      }
+    }
+  }
+
+  div {
+    p {
+      width: 450px;
+    }
+  }
+}

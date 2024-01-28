@@ -5,10 +5,11 @@ const nextConfig = {
         includePaths: [path.join(__dirname, 'styles')],
       },
       images: {
+       
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'i.ibb.co',
+            hostname: '**'
             
           },
         ],

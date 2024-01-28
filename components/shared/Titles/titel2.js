@@ -1,7 +1,7 @@
 "use client"
 
 const Title2 = ({title}) => {
-    console.log(title);
+
 
 
     return (

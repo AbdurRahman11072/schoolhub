@@ -28,6 +28,6 @@ export const config = {
    "/",
    "/dashboard",
    "/dashboard/social",
-   
+   "/login",
    "/signup"
 ]}

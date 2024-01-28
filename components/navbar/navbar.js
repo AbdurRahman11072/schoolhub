@@ -10,7 +10,7 @@ import { useSelector } from "react-redux"
 
 const Navbar = () => {
     const navigate = useRouter();
-    const showuser = useSelector((state) => state?.AuthReducer?.user)
+    const showuser = useSelector((state) => state?.AuthReducer.user)
     console.log(showuser);
     const menu = [
         {
@@ -55,11 +55,17 @@ const Navbar = () => {
                 </ul>
                 
             </div>
-            <div className="nav_btn">
-                    <div className="btn"><p onClick={login}>Login</p></div>
-                    <div className="btn1"><p onClick={signup}>Sign Up</p></div>
+            {
+                !showuser?<div className="nav_btn">
+                <div className="btn"><p onClick={login}>Login</p></div>
+                <div className="btn1"><p onClick={signup}>Sign Up</p></div>
 
-                </div>
+        </div>:
+        <div className="user">
+            <Image src={showuser.photo} alt="" width={50} height={50} className="userimg"/>
+            <h4 >{showuser.username}</h4>
+        </div>
+            }
         </div>
     )
 }

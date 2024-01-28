@@ -17,7 +17,7 @@ export const Auth = createSlice({
         logout: () => {
             return initialState;
         },
-        login:(state=initialState, action) => {
+        Login:(state=initialState, action) => {
          return {
             user:action.payload
          }
@@ -28,5 +28,5 @@ export const Auth = createSlice({
 
 })
 
-export const {showuser, login,logout} = Auth.actions;
+export const {showuser, Login,logout} = Auth.actions;
 export default Auth.reducer;
